@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-egde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/logo_size.jpg">
+    <script src="https://kit.fontawesome.com/05190b7809.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#about"> About Me</a></li>
+                <li><a href="#service"> Services</a></li>
+                <li><a href="#skills"> Skills</a></li>
+                <li><a href="#contact"> Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hi I'm</p>
+            <h1>Aleighx Fym Cabamungan</h1>
+            <p>1st Year Student | Web Designer | Layout Artist</p>
+        </div>
+    </div>
+ </div>   
+<!-- --------------about---------------------- -->
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hi there, I'm Aleighx Fym Cabamungan, a first-year BS-INFOSYS student in University of Southern Mindanao. I have experienced a variety of things along the way that have molded my viewpoint and fueled my passion.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('education')">Education</p>
+                    <p class="tab-links"onclick="opentab('hobbies')">Hobbies & Interests</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Elementary (2010-2017)</span><br>Central Mindanao Colleges</li>
+                        <li><span>HighSchool (2017-2021)</span><br>Central Mindanao Colleges</li>
+                        <li><span>Senior HighSchool (2021-2023)</span><br>Central Mindanao Colleges</li>
+                        <li><span>Collage</span><br>University Of Southern Mindanao</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>Crochet</span><br>Knitting</li>
+                        <li><span>Music</span><br>Pop, Kpop and OPM</li>
+                        <li><span>Cat</span><br>Cat and cat</li>
+                        <li><span>Color</span><br>Black and Purple</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- --------------services---------------------- -->
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Appearance and design are incorporated as vital elements whether you're designing a website, mobile app or maintaining content on a web page.
+                </p>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Layout Artist</h2>
+                <p>ahfbgakwjlfaofiwjmrawklgjlaiwhreoawjfljawoegheafw
+                </p>
+            </div>
+            <div>
+                <i class="fab fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>ahfbgakwjlfaofiwjmrawklgjlaiwhreoawjfljawoegheafw
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------skills---------------------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Technical Skills</h1>
+        <div class="skills-list">
+            <div class="skills">
+                <img src="image/HTML5.jpg">
+                <div class="layer">
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            <div class="skills">
+                <img src="image/CSS.jpg">
+                <div class="layer">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="skills">
+                <img src="image/JavaScript-logo.png">
+                <div class="layer">
+                    <h3>JAVA SCRIPT</h3>
+                </div>
+            </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<!-- --------------contacts---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>s.afacabamungan@usm.edu.ph</p>
+                <p><i class="fa-solid fa-phone"></i>09464061515</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/aleighxfym.cabamungan"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/aleighx28/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Xhgiela. Made with <i class="fa-solid fa-heart"></i> by Aleighx Fym Cabamungan</p>
+    </div>
+</div>
+
+
+
+ <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+ </script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz3xbUh47e6fOEpbw31Ly4xZ8mdqKjg-k_WR3AIy5dVKHck7Zp7xJBOJU6hDAbD9XFnLw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg") 
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
